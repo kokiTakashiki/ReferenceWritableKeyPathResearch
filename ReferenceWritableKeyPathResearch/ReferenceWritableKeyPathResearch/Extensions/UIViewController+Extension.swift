@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIViewController {
-    static func makeStoryBoardToViewController() -> some UIViewController {
+    static func makeStoryBoardToUIViewController() -> UIViewController {
         let storyBoardName = String(describing: self.classForCoder())
         let storyboard = UIStoryboard(name: storyBoardName, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: storyBoardName)
