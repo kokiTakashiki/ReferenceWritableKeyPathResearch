@@ -9,22 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBAction func transitSecond(_ sender: Any) {
-        let viewController = SecondViewController.instantiateStoryBoardToViewController()
+        let viewController = SecondViewController.makeStoryBoardToViewController()
         self.present(viewController, animated: true)
     }
     
     @IBAction func transitThird(_ sender: Any) {
-        let viewController = ThirdViewController.instantiateStoryBoardToViewController()
+        let viewController = ThirdViewController.makeStoryBoardToViewController()
         self.present(viewController, animated: true)
     }
 
     @IBAction func transitForth(_ sender: Any) {
-        let viewController = ForthViewController.instantiateStoryBoardToViewController()
+        let viewController = ForthViewController.makeStoryBoardToViewController()
         self.present(viewController, animated: true)
     }
     
     @IBAction func transitFifth(_ sender: Any) {
-        let viewController = FifthViewController.instantiateStoryBoardToViewController()
+        let viewController = FifthViewController.makeStoryBoardToViewController()
         self.present(viewController, animated: true)
     }
     
